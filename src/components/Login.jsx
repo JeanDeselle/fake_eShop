@@ -5,17 +5,17 @@ class Login extends Component {
 		super(props);
 		// console.log(this.props.isLoged);
 		// resLog={this.props.resLog}
+		this.state = {
+			pseudo: "",
+			password: "",
+			find: null,
+			connected: {
+				pseudo: null,
+				password: null,
+				logo: null,
+			},
+		};
 	}
-	state = {
-		pseudo: "",
-		password: "",
-		find: null,
-		connected: {
-			pseudo: null,
-			password: null,
-			logo: null,
-		},
-	};
 	log() {
 		const pseudo = this.state.pseudo;
 		const password = this.state.password;

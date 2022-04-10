@@ -3,13 +3,16 @@ import React, { Component } from "react";
 class Button extends Component {
 	constructor(props) {
 		super(props);
+		this.state = {
+			test: 0,
+		};
 	}
-	state = {
-		test: 0,
-	};
 	render() {
 		return (
-			<button className="btn-add" onClick={() => this.props.res(this.props.price)}>
+			<button
+				className="btn-add"
+				onClick={() => this.props.res(this.props.price)}
+			>
 				{this.props.children}
 			</button>
 		);
